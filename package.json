@@ -2,11 +2,14 @@
   "name": "capd_functions",
   "version": "1.0.1",
   "description": "Funciones utiles",
-  "main": "./dist/main.js",
+  "main": "./dist/node/main.js",
+  "browser": "./dist/browser/main.js",
   "scripts": {
     "prepare": "npm run build",
-    "build": "npx tsc",
-    "watch": "npx tsc --watch"
+    "build-node": "npx tsc --project tsconfig.node.json",
+    "build-browser": "npx tsc --project tsconfig.browser.json ",
+    "build": "npm run build-node & npm run build-browser",
+    "watch": "npx tsc --watch --project tsconfig.node.json"
   },
   "keywords": [
     "javascript",
@@ -16,5 +19,13 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "^4.7.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristianperez94d/capd_functions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cristianperez94d/capd_functions/issues"
+  },
+  "homepage": "https://github.com/cristianperez94d/capd_functions#readme"
 }
