@@ -1,0 +1,19 @@
+{
+  "name": "capd_functions",
+  "version": "1.0.0",
+  "description": "Funciones utiles",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "watch": "npx tsc --watch"
+  },
+  "keywords": [
+    "javascript",
+    "typescript"
+  ],
+  "author": "Cristian A Perez D <cristianperez94d@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
