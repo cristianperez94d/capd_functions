@@ -2,8 +2,9 @@
   "name": "capd_functions",
   "version": "1.0.0",
   "description": "Funciones utiles",
-  "main": "index.js",
+  "main": "./dist/main.js",
   "scripts": {
+    "prepare": "npm run build",
     "build": "npx tsc",
     "watch": "npx tsc --watch"
   },
