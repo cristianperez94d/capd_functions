@@ -1,10 +1,12 @@
 {
   "name": "capd_functions",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Funciones utiles",
   "main": "lib/node/main.js",
   "browser": "lib/browser/main.js",
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "prepare": "npm run build",
     "build-node": "npx tsc --project tsconfig.node.json",
