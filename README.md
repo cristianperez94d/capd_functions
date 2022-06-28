@@ -30,9 +30,13 @@ Para hacer uso del paquete:
 
 - Anexar lo siguiente
 ```js
-const capdFunctions = require("./dist/main");
+// node js
+const capdFunctions = require("capd_functions");
 // Ejemplo
 capdFunctions.formatNumber(123123, '.'); //salida 123.123
+// browser
+import fn from "capd_functions";
+fn.formatNumber(123123, '.'); //salida 123.123
 ```
 
 Funciones implementadas: 
